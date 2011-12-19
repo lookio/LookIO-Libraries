@@ -19,6 +19,7 @@ UIImage *lookioImage(NSString *path);
 - (void)lookIOManagerDidHideControlButton:(LIOLookIOManager *)aManager;
 - (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
 - (BOOL)lookIOManager:(LIOLookIOManager *)aManager shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)anOrientation;
+- (void)lookIOManager:(LIOLookIOManager *)aManager didUpdateEnabledStatus:(BOOL)lookioIsEnabled;
 @end
 
 @interface LIOLookIOManager : NSObject
