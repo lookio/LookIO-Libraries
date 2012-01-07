@@ -25,6 +25,8 @@ UIImage *lookioImage(NSString *path);
 @property(nonatomic, retain) NSString *targetAgentId;
 @property(nonatomic, assign) BOOL usesTLS, usesSounds;
 @property(nonatomic, retain) UIWindow *mainWindow;
+@property(nonatomic, readonly) BOOL enabled;
+@property(nonatomic, assign) id<LIOLookIOManagerDelegate> delegate;
 
 + (LIOLookIOManager *)sharedLookIOManager;
 - (void)performSetupWithDelegate:(id<LIOLookIOManagerDelegate>)aDelegate;
