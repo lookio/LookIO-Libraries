@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LookIO iOS Remote Support Client v220
+//  LookIO iOS Remote Support Client v222
 //  
 //  Copyright 2011-2012 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"220"
+#define LOOKIO_VERSION_STRING @"222"
 
 @class LIOLookIOManager;
 
