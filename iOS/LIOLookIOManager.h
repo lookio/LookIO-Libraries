@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LookIO iOS Remote Support Client v225
+//  LookIO iOS Remote Support Client v227
 //  
 //  Copyright 2011-2012 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"225"
+#define LOOKIO_VERSION_STRING @"227"
 
 @class LIOLookIOManager;
 
@@ -30,7 +30,7 @@
 @property(nonatomic, retain) UIImage *touchImage;
 @property(nonatomic, retain) NSString *targetAgentId;
 @property(nonatomic, retain) UIWindow *mainWindow;
-@property(nonatomic, readonly) BOOL enabled;
+@property(nonatomic, readonly) BOOL enabled, sessionInProgress;
 @property(nonatomic, assign) id<LIOLookIOManagerDelegate> delegate;
 
 + (LIOLookIOManager *)sharedLookIOManager;
