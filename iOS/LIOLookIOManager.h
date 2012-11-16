@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LookIO iOS Remote Support Client v236
+//  LookIO iOS Remote Support Client v237
 //  
 //  Copyright 2011-2012 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"236"
+#define LOOKIO_VERSION_STRING @"237"
 
 /*
  * Plugin flow for creating and sending content:
