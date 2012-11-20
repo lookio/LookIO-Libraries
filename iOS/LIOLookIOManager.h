@@ -1,48 +1,25 @@
 //  
 //  LIOLookIOManager.h
-//  LookIO iOS Remote Support Client v238
+//  LivePerson iOS Remote Support Client v239
 //  
-//  Copyright 2011-2012 LivePerson, Inc. All rights reserved.
+//  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
-//  This header file is for use with LookIO.
+//  This header file is for use with LivePerson Mobile.
 //  Documentation and support: http://support.look.io/
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"238"
+#define LOOKIO_VERSION_STRING @"239"
 
-/*
- * Plugin flow for creating and sending content:
- * ---------------------------------------------
- * 1) Host registers plugin (a class conforming to LIOPlugin) using registerPlugin:.
- * 2) LookIO asks plugin for info necessary to add button(s) to attachment action sheet.
- * 3) LookIO asks plugin for a UIViewController instance which is then presented modally.
- * 4) Plugin tells LookIO that it's done/canceled via delegate. If done, a key string is
- *    returned to LookIO.
- * 5) LookIO asks plugin for a content thumbnail to be displayed in conversation flow.
- * 6) If user taps bubble, LookIO asks plugin for a UIViewController instance which is
- *    then presented modally in order to display the custom plugin content to the user.
- * 7) Plugin tells LookIO via delegate when it's done displaying content.
- */
-@protocol LIOPlugin;
-
-@protocol LIOPluginDelegate <NSObject>
-- (void)plugin:(id<LIOPlugin>)aPlugin didFinishChoosingContentWithResultKey:(NSString *)aKey;
-- (void)pluginDidCancelChoosingContent:(id<LIOPlugin>)aPlugin;
-- (void)pluginDidFinishDisplayingContent;
-@end
-
-@protocol LIOPlugin <NSObject>
-- (NSString *)pluginId; // Must be a unique string.
-- (NSArray *)pluginButtonLabels; // e.g. "Take Photo", "Choose Existing"
-- (UIViewController *)viewControllerForPluginButtonIndex:(NSInteger)anIndex;
-- (UIView *)thumbnailViewForPluginContentWithKey:(NSString *)aKey;
-- (UIViewController *)viewControllerForDisplayingPluginContentWithKey:(NSString *)aKey;
-- (void)resetPluginState;
-@property(nonatomic, assign) id<LIOPluginDelegate> pluginDelegate;
-@end
+// Event constants.
+extern NSString *const kLPEventConversion;
+extern NSString *const kLPEventPageView;
+extern NSString *const kLPEventSignUp;
+extern NSString *const kLPEventSignIn;
+extern NSString *const kLPEventAddedToCart;
 
 @class LIOLookIOManager;
+@protocol LIOPlugin;
 
 @protocol LIOLookIOManagerDelegate
 @optional
@@ -66,13 +43,20 @@
 
 + (LIOLookIOManager *)sharedLookIOManager;
 - (void)performSetupWithDelegate:(id<LIOLookIOManagerDelegate>)aDelegate;
-- (void)setUILocation:(NSString *)aLocationString;
 - (void)setSkill:(NSString *)aRequiredSkill;
 - (void)beginSession;
-- (void)setSessionExtra:(id)anObject forKey:(NSString *)aKey;
-- (id)sessionExtraForKey:(NSString *)aKey;
-- (void)addSessionExtras:(NSDictionary *)aDictionary;
-- (void)clearSessionExtras;
 - (BOOL)registerPlugin:(id<LIOPlugin>)aPlugin;
+- (void)reportEvent:(NSString *)anEvent;
+- (void)reportEvent:(NSString *)anEvent withData:(id<NSObject>)someData;
+- (void)setCustomVariable:(id)anObject forKey:(NSString *)aKey;
+- (id)customVariableForKey:(NSString *)aKey;
+- (void)addCustomVariable:(NSDictionary *)aDictionary;
+- (void)clearCustomVariable;
+
+// Deprecated methods.
+- (void)setSessionExtra:(id)anObject forKey:(NSString *)aKey DEPRECATED_ATTRIBUTE;
+- (id)sessionExtraForKey:(NSString *)aKey DEPRECATED_ATTRIBUTE;
+- (void)addSessionExtras:(NSDictionary *)aDictionary DEPRECATED_ATTRIBUTE;
+- (void)clearSessionExtras DEPRECATED_ATTRIBUTE;
 
 @end
