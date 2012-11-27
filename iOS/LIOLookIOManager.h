@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v239
+//  LivePerson iOS Remote Support Client v240
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"239"
+#define LOOKIO_VERSION_STRING @"240"
 
 // Event constants.
 extern NSString *const kLPEventConversion;
