@@ -106,3 +106,6 @@
 "LIOLookIOManager.ReconnectCancelAlertBody" = "We're trying to reconnect you with your chat support session. Continue reconnecting?";
 "LIOLookIOManager.ReconnectCancelAlertButtonStop" = "Stop";
 "LIOLookIOManager.ReconnectCancelAlertButtonContinue" = "Continue";
+"LIOLookIOManager.BadInitAlertTitle" = "Live Chat Disabled";
+"LIOLookIOManager.BadInitAlertBody" = "Live chat configuration error. UIWindow was not made key & visible before LPMobile library intitialization.";
+"LIOLookIOManager.BadInitButton" = "Close";
