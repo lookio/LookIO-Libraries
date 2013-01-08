@@ -1,3 +1,5 @@
+"LIOEmailPlaceholder" = "name@example.com";
+
 "LIOAltChatViewController.EmailChatButton"  = "Email Chat";
 "LIOAltChatViewController.EndSessionButton" = "End Session";
 "LIOAltChatViewController.ReconnectionLabel"     = "Reconnecting...";
