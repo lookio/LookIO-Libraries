@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v253
+//  LivePerson iOS Remote Support Client v254
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"253"
+#define LOOKIO_VERSION_STRING @"254"
 
 // Event constants.
 extern NSString *const kLPEventConversion;
@@ -31,6 +31,7 @@ extern NSString *const kLPEventAddedToCart;
 - (void)lookIOManagerDidHideControlButton:(LIOLookIOManager *)aManager;
 - (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
 - (id)lookIOManager:(LIOLookIOManager *)aManager linkViewForURL:(NSURL *)aURL;
+- (void)lookIOManagerDidEndChat:(LIOLookIOManager *)aManager;
 @end
 
 @interface LIOLookIOManager : NSObject
@@ -44,7 +45,7 @@ extern NSString *const kLPEventAddedToCart;
 + (LIOLookIOManager *)sharedLookIOManager;
 - (void)performSetupWithDelegate:(id<LIOLookIOManagerDelegate>)aDelegate;
 - (void)setSkill:(NSString *)aRequiredSkill;
-- (void)beginSession;
+- (void)beginChat;
 - (BOOL)registerPlugin:(id<LIOPlugin>)aPlugin;
 - (void)reportEvent:(NSString *)anEvent;
 - (void)reportEvent:(NSString *)anEvent withData:(id<NSObject>)someData;
@@ -54,6 +55,7 @@ extern NSString *const kLPEventAddedToCart;
 - (void)clearCustomVariable;
 
 // Deprecated methods.
+- (void)beginSession DEPRECATED_ATTRIBUTE;
 - (void)setSessionExtra:(id)anObject forKey:(NSString *)aKey DEPRECATED_ATTRIBUTE;
 - (id)sessionExtraForKey:(NSString *)aKey DEPRECATED_ATTRIBUTE;
 - (void)addSessionExtras:(NSDictionary *)aDictionary DEPRECATED_ATTRIBUTE;
