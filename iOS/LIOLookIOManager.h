@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v263
+//  LivePerson iOS Remote Support Client v264
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"263"
+#define LOOKIO_VERSION_STRING @"264"
 
 // Event constants.
 extern NSString *const kLPEventConversion;
@@ -39,7 +39,8 @@ extern NSString *const kLPEventAddedToCart;
 @property(nonatomic, retain) UIImage *touchImage;
 @property(nonatomic, retain) NSString *targetAgentId;
 @property(nonatomic, retain) UIWindow *mainWindow;
-@property(nonatomic, readonly) BOOL enabled, sessionInProgress;
+@property(nonatomic, readonly) BOOL enabled;
+@property(nonatomic, readonly) BOOL chatInProgress;
 @property(nonatomic, assign) id<LIOLookIOManagerDelegate> delegate;
 
 + (LIOLookIOManager *)sharedLookIOManager;
