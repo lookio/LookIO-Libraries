@@ -26,7 +26,7 @@
 "LIOEmailHistoryViewController.EmailHeader" = "Your Email Address:";
 "LIOEmailHistoryViewController.SubmitButton" = "Submit";
 "LIOEmailHistoryViewController.SuccessAlertTitle" = "Thank you!";
-"LIOEmailHistoryViewController.SuccessAlertBody" = "We just sent you an email with some additional information.";
+"LIOEmailHistoryViewController.SuccessAlertBody" = "Your full chat transcript will be sent to your email address at the end of this conversation.";
 "LIOEmailHistoryViewController.SuccessAlertButton" = "Dismiss";
 
 "LIOInputBarView.SendButton" = "Send";
