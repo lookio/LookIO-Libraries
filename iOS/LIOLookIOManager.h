@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v271
+//  LivePerson iOS Remote Support Client v272
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,9 +9,10 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"271"
+#define LOOKIO_VERSION_STRING @"272"
 
 // Event constants.
+// Use these with the "reportEvent" methods.
 extern NSString *const kLPEventConversion;
 extern NSString *const kLPEventPageView;
 extern NSString *const kLPEventSignUp;
@@ -23,31 +24,31 @@ extern NSString *const kLPEventAddedToCart;
 
 @protocol LIOLookIOManagerDelegate
 @optional
+- (void)lookIOManager:(LIOLookIOManager *)aManager didUpdateEnabledStatus:(BOOL)lookioIsEnabled;
+- (void)lookIOManagerDidHideControlButton:(LIOLookIOManager *)aManager;
+- (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
+- (void)lookIOManagerDidEndChat:(LIOLookIOManager *)aManager;
+- (id)lookIOManager:(LIOLookIOManager *)aManager linkViewForURL:(NSURL *)aURL;
+
+// The following delegate methods should only be used when
+// troubleshooting UI / general integration issues.
 - (UIWindow *)lookIOManagerMainWindowForHostApp:(LIOLookIOManager *)aManager;
 - (BOOL)lookIOManager:(LIOLookIOManager *)aManager shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)anOrientation;
 - (BOOL)lookIOManagerShouldAutorotate:(LIOLookIOManager *)aManager;
 - (NSInteger)lookIOManagerSupportedInterfaceOrientations:(LIOLookIOManager *)aManager;
-- (void)lookIOManager:(LIOLookIOManager *)aManager didUpdateEnabledStatus:(BOOL)lookioIsEnabled;
-- (void)lookIOManagerDidHideControlButton:(LIOLookIOManager *)aManager;
-- (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
-- (id)lookIOManager:(LIOLookIOManager *)aManager linkViewForURL:(NSURL *)aURL;
-- (void)lookIOManagerDidEndChat:(LIOLookIOManager *)aManager;
 @end
 
 @interface LIOLookIOManager : NSObject
 
-@property(nonatomic, retain) UIImage *touchImage;
-@property(nonatomic, retain) NSString *targetAgentId;
-@property(nonatomic, retain) UIWindow *mainWindow;
 @property(nonatomic, readonly) BOOL enabled;
 @property(nonatomic, readonly) BOOL chatInProgress;
+@property(nonatomic, retain) UIWindow *mainWindow;
 @property(nonatomic, assign) id<LIOLookIOManagerDelegate> delegate;
 
 + (LIOLookIOManager *)sharedLookIOManager;
 - (void)performSetupWithDelegate:(id<LIOLookIOManagerDelegate>)aDelegate;
-- (void)setSkill:(NSString *)aRequiredSkill;
 - (void)beginChat;
-- (BOOL)registerPlugin:(id<LIOPlugin>)aPlugin;
+- (void)setSkill:(NSString *)aRequiredSkill;
 - (void)reportEvent:(NSString *)anEvent;
 - (void)reportEvent:(NSString *)anEvent withData:(id<NSObject>)someData;
 - (void)setCustomVariable:(id)anObject forKey:(NSString *)aKey;
