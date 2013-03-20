@@ -1,46 +1,66 @@
 //  
 //  LIOLookIOManager.h
-//  LookIO iOS Remote Support Client v227
+//  LivePerson iOS Remote Support Client v276
 //  
-//  Copyright 2011-2012 LivePerson, Inc. All rights reserved.
+//  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
-//  This header file is for use with LookIO.
+//  This header file is for use with LivePerson Mobile.
 //  Documentation and support: http://support.look.io/
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"227"
+#define LOOKIO_VERSION_STRING @"276"
+
+// Event constants.
+// Use these with the "reportEvent" methods.
+extern NSString *const kLPEventConversion;
+extern NSString *const kLPEventPageView;
+extern NSString *const kLPEventSignUp;
+extern NSString *const kLPEventSignIn;
+extern NSString *const kLPEventAddedToCart;
 
 @class LIOLookIOManager;
+@protocol LIOPlugin;
 
 @protocol LIOLookIOManagerDelegate
 @optional
+- (void)lookIOManager:(LIOLookIOManager *)aManager didUpdateEnabledStatus:(BOOL)lookioIsEnabled;
+- (void)lookIOManagerDidHideControlButton:(LIOLookIOManager *)aManager;
+- (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
+- (void)lookIOManagerDidEndChat:(LIOLookIOManager *)aManager;
+- (id)lookIOManager:(LIOLookIOManager *)aManager linkViewForURL:(NSURL *)aURL;
+
+// The following delegate methods should only be used when
+// troubleshooting UI / general integration issues.
 - (UIWindow *)lookIOManagerMainWindowForHostApp:(LIOLookIOManager *)aManager;
 - (BOOL)lookIOManager:(LIOLookIOManager *)aManager shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)anOrientation;
 - (BOOL)lookIOManagerShouldAutorotate:(LIOLookIOManager *)aManager;
 - (NSInteger)lookIOManagerSupportedInterfaceOrientations:(LIOLookIOManager *)aManager;
-- (void)lookIOManager:(LIOLookIOManager *)aManager didUpdateEnabledStatus:(BOOL)lookioIsEnabled;
-- (void)lookIOManagerDidHideControlButton:(LIOLookIOManager *)aManager;
-- (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
-- (id)lookIOManager:(LIOLookIOManager *)aManager linkViewForURL:(NSURL *)aURL;
 @end
 
 @interface LIOLookIOManager : NSObject
 
-@property(nonatomic, retain) UIImage *touchImage;
-@property(nonatomic, retain) NSString *targetAgentId;
+@property(nonatomic, readonly) BOOL enabled;
+@property(nonatomic, readonly) BOOL chatInProgress;
 @property(nonatomic, retain) UIWindow *mainWindow;
-@property(nonatomic, readonly) BOOL enabled, sessionInProgress;
 @property(nonatomic, assign) id<LIOLookIOManagerDelegate> delegate;
 
 + (LIOLookIOManager *)sharedLookIOManager;
 - (void)performSetupWithDelegate:(id<LIOLookIOManagerDelegate>)aDelegate;
-- (void)setUILocation:(NSString *)aLocationString;
+- (void)beginChat;
 - (void)setSkill:(NSString *)aRequiredSkill;
-- (void)beginSession;
-- (void)setSessionExtra:(id)anObject forKey:(NSString *)aKey;
-- (id)sessionExtraForKey:(NSString *)aKey;
-- (void)addSessionExtras:(NSDictionary *)aDictionary;
-- (void)clearSessionExtras;
+- (void)reportEvent:(NSString *)anEvent;
+- (void)reportEvent:(NSString *)anEvent withData:(id<NSObject>)someData;
+- (void)setCustomVariable:(id)anObject forKey:(NSString *)aKey;
+- (id)customVariableForKey:(NSString *)aKey;
+- (void)addCustomVariables:(NSDictionary *)aDictionary;
+- (void)clearCustomVariables;
+
+// Deprecated methods.
+- (void)beginSession DEPRECATED_ATTRIBUTE;
+- (void)setSessionExtra:(id)anObject forKey:(NSString *)aKey DEPRECATED_ATTRIBUTE;
+- (id)sessionExtraForKey:(NSString *)aKey DEPRECATED_ATTRIBUTE;
+- (void)addSessionExtras:(NSDictionary *)aDictionary DEPRECATED_ATTRIBUTE;
+- (void)clearSessionExtras DEPRECATED_ATTRIBUTE;
 
 @end
