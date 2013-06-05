@@ -12,6 +12,9 @@
 "LIOAltChatViewController.AttachConfirmationBody" = "Are you sure you want to send this photo to our representatives?";
 "LIOAltChatViewController.AttachConfirmationSend" = "Send";
 "LIOAltChatViewController.AttachConfirmationDontSend" = "Don't Send";
+"LIOAltChatViewController.AttachFailureLargeFileTitle" = "Photo too large";
+"LIOAltChatViewController.AttachFailureLargeFileBody" = "The photo you've sent is too large. Please try sending a smaller photo.";
+"LIOAltChatViewController.AttachFailureLargeFileButton" = "Dismiss";
 
 "LIOChatBubbleView.LinkAlert" = "Are you sure you want to leave the app and visit \"%@\"?";
 "LIOChatBubbleView.LinkAlertEmail" = "Are you sure you want to leave the app and e-mail \"%@\"?";
