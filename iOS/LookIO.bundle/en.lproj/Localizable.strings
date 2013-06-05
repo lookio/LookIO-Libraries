@@ -6,7 +6,7 @@
 "LIOAltChatViewController.ReconnectionHideButton" = "Hide";
 "LIOAltChatViewController.LocalNameLabel" = "Me";
 "LIOAltChatViewController.AgentTypingNotification" = "Agent is typing...";
-"LIOAltChatViewController.AttachSourceCamera" = "Take Photo or Video";
+"LIOAltChatViewController.AttachSourceCamera" = "Take Photo";
 "LIOAltChatViewController.AttachSourceLibrary" = "Choose Existing";
 "LIOAltChatViewController.AttachSourceCancel" = "Cancel";
 "LIOAltChatViewController.AttachConfirmationBody" = "Are you sure you want to send this photo to our representatives?";
