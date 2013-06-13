@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v319
+//  LivePerson iOS Remote Support Client v322
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"319"
+#define LOOKIO_VERSION_STRING @"322"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -42,6 +42,7 @@ extern NSString *const kLPEventAddedToCart;
 - (BOOL)lookIOManager:(LIOLookIOManager *)aManager shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)anOrientation;
 - (BOOL)lookIOManagerShouldAutorotate:(LIOLookIOManager *)aManager;
 - (NSInteger)lookIOManagerSupportedInterfaceOrientations:(LIOLookIOManager *)aManager;
+
 @end
 
 @interface LIOLookIOManager : NSObject
@@ -61,14 +62,7 @@ extern NSString *const kLPEventAddedToCart;
 - (id)customVariableForKey:(NSString *)aKey;
 - (void)addCustomVariables:(NSDictionary *)aDictionary;
 - (void)clearCustomVariables;
-
-- (void)enableSurveys;
-- (void)disableSurveys;
-- (void)useRealSurvey;
-- (void)useDemoSurvey;
-- (BOOL)demoSurveyEnabled;
-- (BOOL)surveyEnabled;
-
+- (BOOL)shouldLookInterfaceOrientation;
 
 // Deprecated methods.
 - (void)beginSession DEPRECATED_ATTRIBUTE;
