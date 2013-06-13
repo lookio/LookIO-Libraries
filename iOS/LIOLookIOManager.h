@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v322
+//  LivePerson iOS Remote Support Client v323
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"322"
+#define LOOKIO_VERSION_STRING @"323"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -62,7 +62,7 @@ extern NSString *const kLPEventAddedToCart;
 - (id)customVariableForKey:(NSString *)aKey;
 - (void)addCustomVariables:(NSDictionary *)aDictionary;
 - (void)clearCustomVariables;
-- (BOOL)shouldLookInterfaceOrientation;
+- (BOOL)shouldLockInterfaceOrientation;
 
 // Deprecated methods.
 - (void)beginSession DEPRECATED_ATTRIBUTE;
