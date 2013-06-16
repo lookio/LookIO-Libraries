@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v276
+//  LivePerson iOS Remote Support Client v324
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"276"
+#define LOOKIO_VERSION_STRING @"324"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -18,6 +18,11 @@ extern NSString *const kLPEventPageView;
 extern NSString *const kLPEventSignUp;
 extern NSString *const kLPEventSignIn;
 extern NSString *const kLPEventAddedToCart;
+
+// Collaboration component constants.
+// Return these via the "lookIOManagerEnabledCollaborationComponents:" delegate method.
+#define kLPCollaborationComponentNone   0
+#define kLPCollaborationComponentPhoto  1
 
 @class LIOLookIOManager;
 @protocol LIOPlugin;
@@ -29,6 +34,7 @@ extern NSString *const kLPEventAddedToCart;
 - (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
 - (void)lookIOManagerDidEndChat:(LIOLookIOManager *)aManager;
 - (id)lookIOManager:(LIOLookIOManager *)aManager linkViewForURL:(NSURL *)aURL;
+- (UInt32)lookIOManagerEnabledCollaborationComponents:(LIOLookIOManager *)aManager;
 
 // The following delegate methods should only be used when
 // troubleshooting UI / general integration issues.
@@ -36,6 +42,7 @@ extern NSString *const kLPEventAddedToCart;
 - (BOOL)lookIOManager:(LIOLookIOManager *)aManager shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)anOrientation;
 - (BOOL)lookIOManagerShouldAutorotate:(LIOLookIOManager *)aManager;
 - (NSInteger)lookIOManagerSupportedInterfaceOrientations:(LIOLookIOManager *)aManager;
+
 @end
 
 @interface LIOLookIOManager : NSObject
@@ -55,6 +62,7 @@ extern NSString *const kLPEventAddedToCart;
 - (id)customVariableForKey:(NSString *)aKey;
 - (void)addCustomVariables:(NSDictionary *)aDictionary;
 - (void)clearCustomVariables;
+- (BOOL)shouldLockInterfaceOrientation;
 
 // Deprecated methods.
 - (void)beginSession DEPRECATED_ATTRIBUTE;
