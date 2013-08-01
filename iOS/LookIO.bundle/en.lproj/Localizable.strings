@@ -18,6 +18,9 @@
 "LIOAltChatViewController.AttachStartChatAlertTitle" = "Please start chat";
 "LIOAltChatViewController.AttachStartChatAlertBody" = "Please start a chat with our agents before sending a photo.";
 "LIOAltChatViewController.AttachStartChatAlertButton" = "Dismiss";
+"LIOAltChatViewController.NoChatHistoryAlertTitle" = "Chat Empty";
+"LIOAltChatViewController.NoChatHistoryAlertBody" = "Your chat is empty. Please try again after your conversation begins.";
+"LIOAltChatViewController.NoChatHistoryAlertButton" = "Dismiss";
 
 "LIOChatBubbleView.LinkAlert" = "Are you sure you want to leave the app and visit \"%@\"?";
 "LIOChatBubbleView.LinkAlertEmail" = "Are you sure you want to leave the app and e-mail \"%@\"?";
@@ -40,6 +43,9 @@
 "LIOEmailHistoryViewController.SuccessAlertTitle" = "Thank you!";
 "LIOEmailHistoryViewController.SuccessAlertBody" = "Your full chat transcript will be sent to your email address at the end of this conversation.";
 "LIOEmailHistoryViewController.SuccessAlertButton" = "Dismiss";
+"LIOEmailHistoryViewController.InvalidAlertTitle" = "Invalid Email";
+"LIOEmailHistoryViewController.InvalidAlertBody" = "Please enter a valid e-mail address";
+"LIOEmailHistoryViewController.InvalidAlertButton" = "Dismiss";
 
 "LIOInputBarView.SendButton" = "Send";
 "LIOInputBarView.Placeholder" = "Send a message.";
