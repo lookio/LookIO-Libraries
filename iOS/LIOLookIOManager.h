@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v338
+//  LivePerson iOS Remote Support Client v339
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"338"
+#define LOOKIO_VERSION_STRING @"339"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -238,36 +238,48 @@ extern NSString *const kLPEventAddedToCart;
 - (void)beginChat;
 
 ///---------------------------------------------------------------------------------------
-/// @name Chat Status Methods
+/// @name Custom Button Reporting Methods
 ///---------------------------------------------------------------------------------------
 
 /*!
- Disables chat for certain parts of your app. It's important to use this method if you disable the 
- default LP Mobile chat button and use a custom button instead, to provide accurate availability reports to LP Mobile.
+ When using a custom Live Chat button instead of the LP Mobile tab, this method is used to report that chat is available in a
+ certain part of the app. 
+ It is important to report when chat is available to provide accurate availability reports to LP Mobile.
+ When LP Mobile launches, the default setting is unavailable, so this method should be used when chat becomes available.
+ If you are using the default Live Chat tab, you do not need to use this method.
+
  */
-- (void)setChatDisabled;
+- (void)setChatAvailable;
 
 /*!
- Enables chat for certain parts of your app. It's important to use this method if you disable the
- default LP Mobile chat button and use a custom button instead, to provide accurate availability reports to LP Mobile.
+ When using a custom Live Chat button instead of the LP Mobile tab, this method is used to report that chat is unavailable in a
+ certain part of the app. It is important to report when chat is available to provide accurate availability reports to LP Mobile.
+ When LP Mobile launches, the default setting is unavailable, so this method is useful to report that chat is unavailable after
+ it had previously been reported as available.
+ If you are using the default Live Chat tab, you do not need to use this method.
  */
-- (void)setChatEnabled;
-
-///---------------------------------------------------------------------------------------
-/// @name Custom Chat Button Methods
-///---------------------------------------------------------------------------------------
-
-/*!
- Reports that your custom button is currently visible. It's important to use this method if you disable the
- default LP Mobile chat button and use a custom button instead, to provide accurate availability reports to LP Mobile.
- */
-- (void)setCustomButtonVisible;
+- (void)setChatUnavailable;
 
 /*!
- Reports that your custom button is currently hidden. It's important to use this method if you disable the
- default LP Mobile chat button and use a custom button instead, to provide accurate availability reports to LP Mobile.
+ When using a custom Live Chat button instead of the LP Mobile tab, this method is used to report that an invitation to chat is
+ being shown to the user, in the form of a chat button or other custom UI element.
+ It is important to report when chat is available to provide accurate availability reports to LP Mobile.
+ When LP Mobile launches, the default setting is hidden, so this method should be used when the invitation is shown.
+ If you are using the default Live Chat tab, you do not need to use this method.
+ 
  */
-- (void)setCustomButtonHidden;
+- (void)setInvitationShown;
+
+/*!
+ When using a custom Live Chat button instead of the LP Mobile tab, this method is used to report that an invitation to chat is
+ not being shown to the user.
+ It is important to report when chat is available to provide accurate availability reports to LP Mobile.
+ When LP Mobile launches, the default setting is hidden, so this method is useful to report that an invitation is hidden after
+ it had previously been reported as shown.
+ If you are using the default Live Chat tab, you do not need to use this method.
+ 
+ */
+- (void)setInvitationNotShown;
 
 ///---------------------------------------------------------------------------------------
 /// @name Skill Methods
