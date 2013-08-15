@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v339
+//  LivePerson iOS Remote Support Client v340
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"339"
+#define LOOKIO_VERSION_STRING @"340"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -80,7 +80,7 @@ extern NSString *const kLPEventAddedToCart;
  For example, you may want the button to include a small image of the product in question or the
  name of the product.
  
- @return The object which will be used a custom view for the URL. You are allowed to return a 
+ @return The object which will be used a custom view for the URL. You are allowed to return a
  UIView object or NSString. If you return a simple NSString, this string will be displayed in a 
  button in place of the URL. If you return a UIView, the entire UIView will be used in place of the 
  URL. Please note that the frame of the UIView you pass may be adjusted to fit inside the conversation
@@ -119,7 +119,38 @@ extern NSString *const kLPEventAddedToCart;
  not of these optimal dimensions, LP Mobile will use the UIViewContentModeScaleAspectFit content mode to display the image.
  The optimal image size is 130x44 points for iPad, and 240x17 points for iPhone.
  */
+
 - (UIImage*)lookIOManager:(LIOLookIOManager*)aManager brandingImageForDimensions:(CGSize)dimensions;
+
+/*!
+ Implement this method to specify if a custom action should be performed when a user starts a Live Chat, but
+ no agents are available to answer the chat.
+ 
+ This allows you to define any sort of custom action or message to be performed or displayed when no agents are
+ available. When this method is not implemented or a NO value is returned, an offline survey will be displayed to the 
+ user. If a custom offline survey was specified in the LP Admin Console it will be used, and if not a default offline
+ survey will be used.
+ 
+ @return A boolean value specifying if a custom action should be performed when no agents are available.
+ 
+ @param aManager The LIOLookIOManager shared instance. 
+ 
+ @see lookIOManagerCustomActionForChatNotAnswered:
+ */
+
+-(BOOL)lookIOManagerShouldUseCustomActionForChatNotAnswered:(LIOLookIOManager *)aManager;
+
+/*!
+ Implement this method to specify the custom action to be performed when a user starts a Live Chat, but
+ no agents are available to answer the chat. This method will only be called if you have implemented 
+ lookIOManagerUseCustomActionForChatNotAnswered: and are returning a value of YES.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ 
+ @see lookIOManagerShouldUseCustomActionForChatNotAnswered:
+ */
+
+-(void)lookIOManagerCustomActionForChatNotAnswered:(LIOLookIOManager *)aManager;
 
 ///---------------------------------------------------------------------------------------
 /// @name Troubleshooting / UI Integration Methods
@@ -160,6 +191,7 @@ extern NSString *const kLPEventAddedToCart;
  @return Value specifying whether LP Mobile should autorotate.
  
  @param aManager The LIOLookIOManager shared instance.
+ 
  */
 - (BOOL)lookIOManagerShouldAutorotate:(LIOLookIOManager *)aManager;
 
