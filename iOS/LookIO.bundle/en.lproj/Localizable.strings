@@ -21,7 +21,8 @@
 "LIOAltChatViewController.NoChatHistoryAlertTitle" = "Chat Empty";
 "LIOAltChatViewController.NoChatHistoryAlertBody" = "Your chat is empty. Please try again after your conversation begins.";
 "LIOAltChatViewController.NoChatHistoryAlertButton" = "Dismiss";
-"LIOAltChatViewController.LoadingLabel" = "Loading..";
+"LIOAltChatViewController.LoadingLabel" = "Loading Chat";
+"LIOAltChatViewController.LoadingSubLabel" = "We'll be right with you...";
 
 "LIOChatBubbleView.LinkAlert" = "Are you sure you want to leave the app and visit \"%@\"?";
 "LIOChatBubbleView.LinkAlertEmail" = "Are you sure you want to leave the app and e-mail \"%@\"?";
