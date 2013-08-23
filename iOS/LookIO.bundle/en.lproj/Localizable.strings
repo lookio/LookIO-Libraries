@@ -78,6 +78,11 @@
 "LIOSurveyView.SubmitOfflineSurveyAlertBody" = "Your survey has been submitted.";
 "LIOSurveyView.SubmitOfflineSurveyAlertButton" = "Dismiss";
 
+"LIOSurveyView.LeaveSurveyAlertTitle" = "Leave Survey";
+"LIOSurveyView.LeaveSurveyAlertBody" = "Are you sure you want to exit without finishing this survey?";
+"LIOSurveyView.LeaveSurveyAlertYesButton" = "Yes";
+"LIOSurveyView.LeaveSurveyAlertNoButton" = "No";
+
 "LIONotificationArea.PoweredBy" = "Powered by";
 
 "LIOSurveyPickerView.DoneButton" = "Next";
