@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v364
+//  LivePerson iOS Remote Support Client v368
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"364"
+#define LOOKIO_VERSION_STRING @"368"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
