@@ -1,6 +1,6 @@
 //  
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v384
+//  LivePerson iOS Remote Support Client v392
 //  
 //  Copyright 2011-2013 LivePerson, Inc. All rights reserved.
 //  
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"384"
+#define LOOKIO_VERSION_STRING @"392"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -290,6 +290,16 @@ extern NSString *const kLPEventAddedToCart;
  element used to start a chat.
  */
 - (void)beginChat;
+
+/*!
+ Calling this method while a chat is in progress will end the chat. Use the chatInProgress property to determine 
+ if a chat is in progress which needs to be ended. Use the showAlert parameter to specify if you would like an alert
+ view to be shown to the user indicating that chat has ended.
+ 
+ @param showAlert A boolean value specifiying if an alert view should be shown to the user, alerting them that chat has  
+ ended.
+ */
+- (void)endChatAndShowAlert:(BOOL)showAlert;
 
 ///---------------------------------------------------------------------------------------
 /// @name Custom Button Reporting Methods
