@@ -1,6 +1,6 @@
 //
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v423
+//  LivePerson iOS Remote Support Client v425
 //
 //  Copyright 2011-2014 LivePerson, Inc. All rights reserved.
 //
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"423"
+#define LOOKIO_VERSION_STRING @"425"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -56,6 +56,20 @@ extern NSString *const kLPEventAddedToCart;
  @param aManager The LIOLookIOManager shared instance.
  */
 - (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
+
+/*!
+ Called whenever LP mobile shows its chat overlay.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ */
+- (void)lookIOManagerDidShowChat:(LIOLookIOManager *)aManager;
+
+/*!
+ Called whenever LP mobile hides its chat overlay.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ */
+- (void)lookIOManagerDidHideChat:(LIOLookIOManager *)aManager;
 
 /*!
  Called whenever a chat session has ended.
