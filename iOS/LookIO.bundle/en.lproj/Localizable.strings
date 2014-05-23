@@ -188,6 +188,6 @@
 "LIOLookIOManager.KeyboardMenuButtonEndSession" = "End Session";
 "LIOLookIOManager.KeyboardMenuButtonKeyboard" = "Keyboard";
 
-"LIOLookIOManager.WebViewLoadingTitle" = "Loading..";
+"LIOLookIOManager.WebViewLoadingTitle" = "Loading...";
 "LIOLookIOManager.WebViewCloseButton" = "Close";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Open in Browser";
