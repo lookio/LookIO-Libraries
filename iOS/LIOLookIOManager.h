@@ -1,6 +1,6 @@
 //
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v428
+//  LivePerson iOS Remote Support Client v429
 //
 //  Copyright 2011-2014 LivePerson, Inc. All rights reserved.
 //
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"428"
+#define LOOKIO_VERSION_STRING @"429"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -33,6 +33,16 @@ extern NSString *const kLPEventAddedToCart;
 ///---------------------------------------------------------------------------------------
 /// @name Status Methods
 ///---------------------------------------------------------------------------------------
+
+/*!
+ Called whenever one of a set of predefined events occurs within the LPMobile library.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ @param eventName The name of the event that occured.
+ @param parameters The parameters associated with the occuring event, if relevant.
+ */
+
+- (void)lookIOManager:(LIOLookIOManager *)aManager onEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;
 
 /*!
  Called whenever chat is enabled or disabled due to a change in your agents’ availability status, when chat is directly
