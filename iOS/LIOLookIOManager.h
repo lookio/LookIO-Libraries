@@ -61,7 +61,7 @@ extern NSString *const kLPEventAddedToCart;
  @param lookioIsEnabled Live Chat's newly updated enabled status.
  */
 
-- (void)lookioManager:(LIOLookIOManager *)manager didChangeEnabled:(bool)enabled forSkill:(NSString *)skill forAccount:(NSString *)account;
+- (void)lookioManager:(LIOLookIOManager *)manager didChangeEnabled:(BOOL)enabled forSkill:(NSString *)skill forAccount:(NSString *)account;
 
 /*!
  Called whenever LP mobile hides its own control "Live Chat" tab/button.
