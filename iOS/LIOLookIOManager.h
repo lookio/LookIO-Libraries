@@ -1,6 +1,6 @@
 //
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v424
+//  LivePerson iOS Remote Support Client v433
 //
 //  Copyright 2011-2014 LivePerson, Inc. All rights reserved.
 //
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"424"
+#define LOOKIO_VERSION_STRING @"433"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -35,6 +35,16 @@ extern NSString *const kLPEventAddedToCart;
 ///---------------------------------------------------------------------------------------
 
 /*!
+ Called whenever one of a set of predefined events occurs within the LPMobile library.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ @param eventName The name of the event that occured.
+ @param parameters The parameters associated with the occuring event, if relevant.
+ */
+
+- (void)lookIOManager:(LIOLookIOManager *)aManager onEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;
+
+/*!
  Called whenever chat is enabled or disabled due to a change in your agents’ availability status, when chat is directly
  disabled, or any other reason. This status can be used to reflect the new availability status in your app’s UI.
  
@@ -42,6 +52,16 @@ extern NSString *const kLPEventAddedToCart;
  @param lookioIsEnabled Live Chat's newly updated enabled status.
  */
 - (void)lookIOManager:(LIOLookIOManager *)aManager didUpdateEnabledStatus:(BOOL)lookioIsEnabled;
+
+/*!
+ Called whenever chat is enabled or disabled for a specific skill in a specific account, due to a change in your agents’ availability status, 
+ when chat is directly disabled, or any other reason. This status can be used to reflect the new availability status in your app’s UI.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ @param lookioIsEnabled Live Chat's newly updated enabled status.
+ */
+
+- (void)lookioManager:(LIOLookIOManager *)manager didChangeEnabled:(bool)enabled forSkill:(NSString *)skill forAccount:(NSString *)account;
 
 /*!
  Called whenever LP mobile hides its own control "Live Chat" tab/button.
@@ -56,6 +76,20 @@ extern NSString *const kLPEventAddedToCart;
  @param aManager The LIOLookIOManager shared instance.
  */
 - (void)lookIOManagerDidShowControlButton:(LIOLookIOManager *)aManager;
+
+/*!
+ Called whenever LP mobile shows its chat overlay.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ */
+- (void)lookIOManagerDidShowChat:(LIOLookIOManager *)aManager;
+
+/*!
+ Called whenever LP mobile hides its chat overlay.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+ */
+- (void)lookIOManagerDidHideChat:(LIOLookIOManager *)aManager;
 
 /*!
  Called whenever a chat session has ended.
@@ -278,10 +312,46 @@ extern NSString *const kLPEventAddedToCart;
 - (void)performSetupWithDelegate:(id<LIOLookIOManagerDelegate>)aDelegate;
 
 /*!
+ Returns a boolean value indicating if chat is enabled for a certain skill in the default account.
+ 
+ @param skill The name of the skill for which enabled is being checked.
+ */
+
+- (BOOL)isChatEnabledForSkill:(NSString *)skill;
+
+/*!
+ Returns a boolean value indicating if chat is enabled for a certain skill for a certain account.
+ 
+ @param skill The name of the skill for which chat enabled is being queried.
+ @param account The name of the account for which chat enabled is being queried.
+ */
+
+- (BOOL)isChatEnabledForSkill:(NSString *)skill forAccount:(NSString *)account;
+
+/*!
  Displays the LP Mobile chat view and start a chat from your own custom chat button or other UI
  element used to start a chat.
  */
 - (void)beginChat;
+
+/*!
+ Displays the LP Mobile chat view and start a chat from your own custom chat button or other UI
+ element used to start a chat. The chat will be routed to agents with the specified skill in the last
+ account that was set, or in the default account if an account was not set.
+ 
+ @param skill The agent skill to which this chat will be routed to.
+ */
+- (void)beginChatWithSkill:(NSString *)skill;
+
+/*!
+ Displays the LP Mobile chat view and start a chat from your own custom chat button or other UI
+ element used to start a chat. The chat will be routed to agents with the specified skill in the 
+ specified account.
+ 
+ @param skill The agent skill to which this chat will be routed to.
+ @param account The account to which this chat will be routed to.
+ */
+- (void)beginChatWithSkill:(NSString *)skill withAccount:(NSString *)account;
 
 /*!
  Calling this method while a chat is in progress will end the chat. Use the chatInProgress property to determine
@@ -359,6 +429,17 @@ extern NSString *const kLPEventAddedToCart;
  @param aRequiredSkill The skill required to answer questions at this point in your app.
  */
 - (void)setSkill:(NSString *)aRequiredSkill;
+
+
+/*!
+ Reports what sort of skill in which specific account is required to answer questions that the user might have 
+ while using a particular part of your app. This information will be viewable to all available agents.
+ 
+ @param skill The skill required to answer questions at this point in your app.
+ @param account The account required to answer questions at this point in your app.
+ */
+
+- (void)setSkill:(NSString *)skill withAccount:(NSString *)account;
 
 ///---------------------------------------------------------------------------------------
 /// @name Event Methods

@@ -56,7 +56,7 @@
 "LIOEmailHistoryViewController.InvalidAlertButton" = "Dismiss";
 
 "LIOInputBarView.SendButton" = "Send";
-"LIOInputBarView.Placeholder" = "Send a message.";
+"LIOInputBarView.Placeholder" = "Enter a message";
 "LIOInputBarView.TextFieldAccessibilityLabel" = "Chat Entry";
 
 "LIOInterstitialViewController.LoadingLabel" = "We're loading the chat.\nGive us just a few. :)";
@@ -188,6 +188,6 @@
 "LIOLookIOManager.KeyboardMenuButtonEndSession" = "End Session";
 "LIOLookIOManager.KeyboardMenuButtonKeyboard" = "Keyboard";
 
-"LIOLookIOManager.WebViewLoadingTitle" = "Loading..";
+"LIOLookIOManager.WebViewLoadingTitle" = "Loading...";
 "LIOLookIOManager.WebViewCloseButton" = "Close";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Open in Browser";
