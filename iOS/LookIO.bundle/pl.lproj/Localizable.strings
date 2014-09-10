@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "Ładowanie ...";
 "LIOLookIOManager.WebViewCloseButton" = "Zamknij";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Otwórz w przeglądarce";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "Sesja pomocy została zakończona";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "Agent zakończył czat. Przekazać informacje zwrotne?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Anuluj";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "W porządku";

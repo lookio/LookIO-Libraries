@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "로드 중...";
 "LIOLookIOManager.WebViewCloseButton" = "닫기";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "브라우저에서 열기";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "지원 세션 종료";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "에이전트가 채팅을 종료했습니다. 귀하의 경험에 대한 피드백을 제공하시겠습니까?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "취소";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "괜찮다";

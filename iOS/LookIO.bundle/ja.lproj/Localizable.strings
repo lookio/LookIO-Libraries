@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "読み込み中です...";
 "LIOLookIOManager.WebViewCloseButton" = "閉じる";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "ブラウザで開く";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "チャットが終了";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "エージェントはチャットを終了しました。あなたのご経験についてご意見をお寄せください。";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "キャンセル";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "普通";

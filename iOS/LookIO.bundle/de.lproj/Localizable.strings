@@ -35,6 +35,7 @@
 "LIOControlButtonView.DefaultText" = "Live-Hilfe";
 "LIOControlButtonView.ReconnectingText" = "Erneuter Verbindungsaufbau";
 "LIOControlButtonView.ChatInvitePopupMessage" = "Zum Chatten anklicken";
+"LIOControlButtonView.ChatContinuePopupMessage" = "Weiter im Chat";
 "LIOControlButtonView.CompleteSurveyPopupMessage" = "Zum Ausfüllen der Umfrage anklicken";
 "LIODismissalBarView.DismissalLabel" = "Chat verbergen";
 "LIOEmailHistoryViewController.NavTitle" = "E-Mail-Konversation";
@@ -171,3 +172,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "Wird geladen...";
 "LIOLookIOManager.WebViewCloseButton" = "Schließen";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Im Browser öffnen";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "Supportsitzung beendet";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "Der Mitarbeiter hat den Chat beendet. Möchten Sie ein Feedback zu Ihrer Erfahrung geben?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Abbrechen";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "OK";
