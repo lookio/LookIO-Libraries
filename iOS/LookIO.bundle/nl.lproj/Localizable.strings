@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "Inlezen ...";
 "LIOLookIOManager.WebViewCloseButton" = "Beëindig";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Open in browser";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "De ondersteuningssessie is afgelopen";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "De medewerker heeft de chatsessie beëindigd. Geef aub uw feedback?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Annuleer";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "Ok";

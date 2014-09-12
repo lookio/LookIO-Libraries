@@ -192,3 +192,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "Loading...";
 "LIOLookIOManager.WebViewCloseButton" = "Close";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Open in Browser";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "Support Session Ended";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "The agent has ended the chat. Provide feedback on your experience?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Cancel";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "OK";

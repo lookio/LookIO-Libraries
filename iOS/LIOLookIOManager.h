@@ -1,6 +1,6 @@
 //
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v442
+//  LivePerson iOS Remote Support Client v445
 //
 //  Copyright 2011-2014 LivePerson, Inc. All rights reserved.
 //
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"442"
+#define LOOKIO_VERSION_STRING @"445"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -187,6 +187,16 @@ extern NSString *const kLPEventAddedToCart;
 
 -(void)lookIOManagerCustomActionForChatNotAnswered:(LIOLookIOManager *)aManager;
 
+/*!
+ Implement this method to specify if LP Mobile should cache chat messages when the app is terminated during 
+ an active engagement, so that these messages will be displayed to the user in case the chat is reconnected
+ after the user relaunches the app. If this method is not implemented, the default value is NO, and the
+ reconnect feature is not enabled in the app.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+  */
+
+-(BOOL)lookIOManagerShouldCacheChatMessagesForReconnect:(LIOLookIOManager *)aManager;
 
 ///---------------------------------------------------------------------------------------
 /// @name Troubleshooting / UI Integration Methods

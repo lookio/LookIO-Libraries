@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "Carregando...";
 "LIOLookIOManager.WebViewCloseButton" = "Fechar";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Abrir no Navegador";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "A sessão de suporte terminou.";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "O agente finalizou o chat. Fornecer feedback sobre sua experiência?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Cancelar";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "Ok";

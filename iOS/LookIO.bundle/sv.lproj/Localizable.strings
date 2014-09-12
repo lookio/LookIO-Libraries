@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "Laddar...";
 "LIOLookIOManager.WebViewCloseButton" = "Stäng";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Öppna i webbläsare";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "Hjälpsessionen slut";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "Representanten har avslutat chattsession. Lämna feedback?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Annullera";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "Ok";

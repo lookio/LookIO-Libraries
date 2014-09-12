@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "正在加载……";
 "LIOLookIOManager.WebViewCloseButton" = "关闭";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "在浏览器中打开页面";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "支持会话已结束";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "代表已结束聊天。反馈您的体验?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "取消";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "好";

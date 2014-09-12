@@ -171,3 +171,8 @@
 "LIOLookIOManager.WebViewLoadingTitle" = "Lataa ...";
 "LIOLookIOManager.WebViewCloseButton" = "Sulje";
 "LIOLookIOManager.WebViewOpenInBrowserButton" = "Avaa sivu selaimessa";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "Tuki-istunto loppui";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "Asiakaspalvelu on lopettanut keskustelua. Antaa palautetta?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Peruuta";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "OK";
