@@ -1,6 +1,6 @@
 //
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v448
+//  LivePerson iOS Remote Support Client v452
 //
 //  Copyright 2011-2014 LivePerson, Inc. All rights reserved.
 //
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"448"
+#define LOOKIO_VERSION_STRING @"452"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -207,6 +207,45 @@ extern NSString *const kLPEventAddedToCart;
  */
 
 -(BOOL)lookIOManagerShouldReportCallDeflection:(LIOLookIOManager *)aManager;
+
+///---------------------------------------------------------------------------------------
+/// @name Single Sign On Methods
+///---------------------------------------------------------------------------------------
+
+/*!
+ Implement this method to enable or disable LivePerson Single Sign On for your app.
+
+ Single Sign On allows you to send your agent verified information about the user that is currently logged into your
+ app, ensuring that they are not impersonating another user. This verification is achieved by calling a URL on your
+ server which includes the logged in user's details. This URL will generate a key that will be passed on to LivePerson's
+ servers, which will validate this key with your server, and only if the keys match will the verified information be
+ presented to your agent.
+
+ Since the generated key will be used to return verified information about your logged in user to your agent's console,
+ Single Sign On should only be enabled when a user is logged into your app.
+
+ @return A boolean value indicating whether or not Single Sign On is implemented.
+ 
+ @param aManager The LIOLookIOManager shared instance.
+*/
+
+- (BOOL)lookIOManagerSingleSignOnEnabled:(LIOLookIOManager*)aManager;
+
+/*!
+ Implement this method to specify the URL to be called by LP Mobile to generate a key which will be used to verify
+ your logged in user's identity.
+
+ This URL should include details about the currently logged in user, as these should be used to generate a key that
+ will return verified information about your logged in user to your agent's console.
+
+ This endpoint should return a JSON Object with a single key-value pair with the key "ssoKey", that contains the 
+ key to be used to verify the user's identify. For example: {"ssoKey":"<KEY>"}
+
+ @return A URL that will be called to generate a key which will be used to verify your logged in user's identity.
+ @param aManager The LIOLookIOManager shared instance.
+*/
+
+- (NSURL*)lookIOManagerSingleSignOnKeyGenURL:(LIOLookIOManager*)aManager;
 
 ///---------------------------------------------------------------------------------------
 /// @name Troubleshooting / UI Integration Methods
