@@ -1,6 +1,6 @@
 //
 //  LIOLookIOManager.h
-//  LivePerson iOS Remote Support Client v452
+//  LivePerson iOS Remote Support Client v453
 //
 //  Copyright 2011-2014 LivePerson, Inc. All rights reserved.
 //
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define LOOKIO_VERSION_STRING @"452"
+#define LOOKIO_VERSION_STRING @"453"
 
 // Event constants.
 // Use these with the "reportEvent" methods.
@@ -112,6 +112,7 @@ extern NSString *const kLPEventAddedToCart;
  */
 
 - (void)lookIOManager:(LIOLookIOManager *)aManager didSendNotification:(NSString *)notification withUnreadMessagesCount:(NSInteger)count;
+
 
 ///---------------------------------------------------------------------------------------
 /// @name Customization Methods

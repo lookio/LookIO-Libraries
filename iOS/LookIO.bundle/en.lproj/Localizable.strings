@@ -197,3 +197,15 @@
 "LIOLookIOManager.SessionEndedPostChatAlertBody" = "The agent has ended the chat. Provide feedback on your experience?";
 "LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Cancel";
 "LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "OK";
+
+"LIOLookIOManager.SecuredFormBubbleTitle" = "Secure form";
+"LIOLookIOManager.SecuredFormSenderNamePlaceholder" = "Tap to fill the form";
+
+"LIOLookIOManager.SecuredFormSubmittionFailed" = "Submission failed";
+"LIOLookIOManager.SecuredFormSuccessfullySubmitted" = "Successfully submitted";
+
+"LIOChatBubbleView.AlertCancelClose" = "Cancel";
+"LIOChatBubbleView.AlertClose" = "Close";
+"LIOChatBubbleView.DestructiveCloseMessage" = "If you close the form, you won’t be able to access it again. Are you sure you want to close it?";
+"LIOChatBubbleView.AlertCloseTitle" = "Close form";
+"LIOChatBubbleView.InvalidFormTitle" = "Invalid form";
