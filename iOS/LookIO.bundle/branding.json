@@ -1,0 +1,453 @@
+{
+    "engagement": {
+        "font": {
+            "family": "HelveticaNeue"
+        },
+        "bold_font": {
+            "family": "HelveticaNeue-Medium"
+        },
+        "logo": {
+            "image": {
+                "url": ""
+            }
+        },
+        "status_bar": {
+            "hidden": "0",
+            "type": "dark"
+        },
+        "loading_screen": {
+            "title": {
+                "font": {
+                    "color": "#666666",
+                    "size": "16.0"
+                }
+            },
+            "subtitle": {
+                "font": {
+                    "color": "#666666",
+                    "size": "14.0"
+                }
+            },
+            "background": {
+                "color": "#dddddd",
+                "alpha": "0.8"
+            },
+            "image": {
+                "spin": "1",
+                "url": ""
+            }
+        },
+        "chat_background": {
+            "background": {
+                "color": "#d8d8d8",
+                "alpha": "0.4"
+            },
+            "blur": {
+                "active": "1",
+                "radius": "24.0",
+                "iterations": "8",
+                "saturation_factor": "3.0"
+            }
+        },
+        "branding_bar": {
+            "background": {
+                "color": "#dddddd",
+                "alpha": "1.0"
+            },
+            "border": {
+                "color": "#aaaaaa"
+            },
+            "notifications": {
+                "font": {
+                    "color": "#555555",
+                    "size": "12.0"
+                }
+            }
+        },
+        "keyboard": {
+            "type": "light",
+            "initial_state": "up"
+        },
+        "chat_bubbles": {
+            "corner_radius": "10.0",
+            "agent": {
+                "background": {
+                    "color": "#47a1ff"
+                },
+                "border": {
+                    "width": "0",
+                    "color": ""
+                },
+                "size": {
+                    "width": "0.8"
+                },
+                "font": {
+                    "color": "#ffffff",
+                    "size": "16.0"
+                },
+                "links": {
+                    "background": {
+                        "color": "#ffffff"
+                    },
+                    "border": {
+                        "color": "#019fde"
+                    },
+                    "font": {
+                        "color": "#555555",
+                        "size": "15.0"
+                    }
+                }
+            },
+            "visitor": {
+                "background": {
+                    "color": "#dddddd"
+                },
+                "border": {
+                    "width": "0",
+                    "color": ""
+                },
+                "size": {
+                    "width": "0.8"
+                },
+                "font": {
+                    "color": "#4f4f4f",
+                    "size": "16.0"
+                },
+                "links": {
+                    "background": {
+                        "color": "#ffffff"
+                    },
+                    "border": {
+                        "color": "#019fde"
+                    },
+                    "font": {
+                        "color": "#555555",
+                        "size": "15.0"
+                    }
+                }
+            }
+        },
+        "system_message": {
+            "background": {
+                "color": "#47a1ff"
+            },
+            "border": {
+                "width": "0",
+                "color": ""
+            },
+            "size": {
+                "width": "0.8"
+            },
+            "font": {
+                "color": "#ffffff",
+                "size": "16.0"
+            },
+            "bubble_alignment": "left"
+        },
+        "send_bar": {
+            "background": {
+                "color": "#666666",
+                "alpha": "0.5"
+            },
+            "border": {
+                "color": "#ffffff"
+            },
+            "plus_button": {
+                "color": "#ffffff",
+                "border": {
+                    "color": "#ffffff"
+                }
+            },
+            "text_field": {
+                "background": {
+                    "color": "#ffffff"
+                },
+                "font": {
+                    "color": "#333333",
+                    "size": "16.0"
+                },
+                "border": {
+                    "color": "#5e5e5e"
+                },
+                "placeholder": {
+                    "font": {
+                        "color": "#999999",
+                        "size": "16.0"
+                    }
+                }
+            },
+            "send_button": {
+                "font": {
+                    "color": "#ffffff",
+                    "size": "18.0"
+                },
+                "border": {
+                    "color": "#ffffff"
+                }
+            },
+            "character_count": {
+                "font": {
+                    "color": "#ffffff",
+                    "size": "12.0"
+                }
+            }
+        },
+        "email_chat": {
+            "email_chat_card": {
+                "background": {
+                    "color": "#eeeeee",
+                    "alpha": "1.0"
+                },
+                "border": {
+                    "color": "#aaaaaa"
+                }
+            },
+            "text_field": {
+                "background": {
+                    "color": "#ffffff"
+                },
+                "font": {
+                    "color": "#555555",
+                    "size": "17.0"
+                },
+                "border": {
+                    "color": "#999999"
+                }
+            },
+            "title": {
+                "font": {
+                    "color": "#666666",
+                    "size": "16.0"
+                }
+            },
+            "cancel_button": {
+                "font": {
+                    "color": "#007df5",
+                    "size": "17.0"
+                }
+            },
+            "submit_button": {
+                "font": {
+                    "color": "#007df5",
+                    "size": "17.0"
+                }
+            }
+        },
+        "approve_photo": {
+            "background": {
+                "color": "#999999",
+                "alpha": "0.5"
+            },
+            "approve_photo_card": {
+                "background": {
+                    "color": "#eeeeee",
+                    "alpha": "1.0"
+                },
+                "border": {
+                    "color": "#aaaaaa"
+                }
+            },
+            "title": {
+                "font": {
+                    "color": "#666666",
+                    "size": "16.0"
+                }
+            },
+            "cancel_button": {
+                "font": {
+                    "color": "#007df5",
+                    "size": "17.0"
+                }
+            },
+            "submit_button": {
+                "font": {
+                    "color": "#007df5",
+                    "size": "17.0"
+                }
+            }
+        },
+        "keyboard_menu": {
+            "background": {
+                "color": "#4c4c4c",
+                "alpha": "0.55"
+            },
+            "border": {
+                "color": "#7f7f7f"
+            },
+            "font": {
+                "color": "#ffffff",
+                "size": "13.0"
+            },
+            "icon": {
+                "color": "#ffffff"
+            }
+        },
+        "toaster_view": {
+            "background": {
+                "color": "#666666",
+                "alpha": "0.5"
+            },
+            "font": {
+                "color": "#ffffff",
+                "size": "14.0"
+            }
+        },
+        "webview": {
+            "header_bar": {
+                "background": {
+                    "color": "#dddddd"
+                },
+                "font": {
+                    "color": "#000000",
+                    "size": "14.0"
+                },
+                "buttons": {
+                    "color": "#47a1ff"
+                }
+            }
+        }
+    },
+    "surveys": {
+        "page_control": {
+            "color": "#888888"
+        },
+        "survey_card": {
+            "background": {
+                "color": "#eeeeee",
+                "alpha": "0.9"
+            },
+            "border": {
+                "color": "#999999"
+            },
+            "title": {
+                "font": {
+                    "color": "#666666",
+                    "size": "16.0"
+                }
+            },
+            "subtitle": {
+                "font": {
+                    "color": "#666666",
+                    "size": "14.0"
+                }
+            },
+            "next_button": {
+                "font": {
+                    "color": "#007df5",
+                    "size": "17.0"
+                }
+            },
+            "cancel_button": {
+                "font": {
+                    "color": "#007df5",
+                    "size": "17.0"
+                }
+            }
+        },
+        "text_field": {
+            "background": {
+                "color": "#ffffff"
+            },
+            "font": {
+                "color": "#555555",
+                "size": "17.0"
+            },
+            "border": {
+                "color": "#999999"
+            }
+        },
+        "list": {
+            "background": {
+                "color": "#ffffff"
+            },
+            "font": {
+                "color": "#555555",
+                "size": "17.0"
+            },
+            "border": {
+                "color": "#b7b7b7"
+            }
+        },
+        "stars": {
+            "border": {
+                "color": "#fafafa"
+            },
+            "font": {
+                "color": "#666666",
+                "size": "15.0"
+            },
+            "unselected": {
+                "background": {
+                    "color": "#9b9b9b"
+                }
+            },
+            "selected": {
+                "background": {
+                    "color": "#f7a300"
+                }
+            }
+        },
+        "validation_alert": {
+            "background": {
+                "color": "#ff3737"
+            },
+            "font": {
+                "color": "#ffffff",
+                "size": "15.0"
+            }
+        }
+    },
+    "visit": {
+        "control_button": {
+            "alpha": "0.9",
+            "chat_icon": {
+                "image": {
+                    "url": ""
+                }
+            },
+            "survey_icon": {
+                "image": {
+                    "url": ""
+                }
+            },
+            "background": {
+                "color": "#666666"
+            },
+            "content": {
+                "color": "#ffffff"
+            },
+            "border": {
+                "color": "#cccccc"
+            },
+            "position": {
+                "horizontal": "right",
+                "vertical": "0.5"
+            },
+            "badge": {
+                "background": {
+                    "color": "#ff0000"
+                },
+                "font": {
+                    "color": "#ffffff",
+                    "size": "12.0"
+                }
+            },
+            "font": {
+                "color": "#ffffff",
+                "size": "17.0"
+            },
+            "message_label": {
+                "font": {
+                    "color": "#ffffff",
+                    "size": "14.0"
+                },
+                "background": {
+                    "color": "#666666"
+                },
+                "border": {
+                    "color": "#cccccc"
+                }
+            }
+        }
+    }
+}
