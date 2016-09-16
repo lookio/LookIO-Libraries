@@ -1,0 +1,213 @@
+"LIOEmailPlaceholder" = "name@example.com";
+
+"LIOAltChatViewController.EmailChatButton"  = "Email Chat";
+"LIOAltChatViewController.EndSessionButton" = "End Session";
+"LIOAltChatViewController.ReconnectionLabel" = "Reconnecting...";
+"LIOAltChatViewController.ReconnectionHideButton" = "Hide";
+"LIOAltChatViewController.LocalNameLabel" = "Me";
+"LIOAltChatViewController.AgentTypingNotification" = "Agent is typing...";
+"LIOAltChatViewController.AttachSourceCamera" = "Take Photo";
+"LIOAltChatViewController.AttachSourceLibrary" = "Choose Existing";
+"LIOAltChatViewController.AttachSourceCancel" = "Cancel";
+"LIOAltChatViewController.AttachConfirmationBody" = "Are you sure you want to send this photo to our agents?";
+"LIOAltChatViewController.AttachConfirmationSend" = "Send";
+"LIOAltChatViewController.AttachConfirmationDontSend" = "Don't Send";
+"LIOAltChatViewController.AttachFailureLargeFileTitle" = "Photo too large";
+"LIOAltChatViewController.AttachFailureLargeFileBody" = "The photo you've sent is too large. Please try sending a smaller photo.";
+"LIOAltChatViewController.AttachFailureLargeFileButton" = "Dismiss";
+"LIOAltChatViewController.AttachStartChatAlertTitle" = "Please start chat";
+"LIOAltChatViewController.AttachStartChatAlertBody" = "Please start a chat with our agents before sending a photo.";
+"LIOAltChatViewController.AttachStartChatAlertButton" = "Dismiss";
+"LIOAltChatViewController.NoChatHistoryAlertTitle" = "Chat Empty";
+"LIOAltChatViewController.NoChatHistoryAlertBody" = "Your chat is empty. Please try again after your conversation begins.";
+"LIOAltChatViewController.NoChatHistoryAlertButton" = "Dismiss";
+"LIOAltChatViewController.LoadingLabel" = "Loading Chat";
+"LIOAltChatViewController.LoadingSubLabel" = "We'll be right with you...";
+"LIOAltChatViewController.NewMessageAccessiblityAlert" = "New message from";
+"LIOAltChatViewController.ResendFailedMessageButton" = "Resend failed message";
+"LIOAltChatViewController.ScrollToTopButton" = "Scroll to top";
+
+"LIOChatBubbleView.LinkAlert" = "Are you sure you want to leave the app and visit \"%@\"?";
+"LIOChatBubbleView.LinkAlertEmail" = "Are you sure you want to leave the app and e-mail \"%@\"?";
+"LIOChatBubbleView.LinkAlertPhone" = "Are you sure you want to leave the app and call \"%@\"?";
+"LIOChatBubbleView.AlertGo" = "Open";
+"LIOChatBubbleView.AlertCancel" = "Don't Open";
+"LIOChatBubbleView.AlertGoPhone" = "Call";
+"LIOChatBubbleView.AlertCancelPhone" = "Don't Call";
+
+"LIOControlButtonView.DefaultText" = "Live Help";
+"LIOControlButtonView.ReconnectingText" = "Reconnecting";
+"LIOControlButtonView.ChatInvitePopupMessage" = "Tap to chat";
+"LIOControlButtonView.ChatContinuePopupMessage" = "Tap to continue chat";
+"LIOControlButtonView.CompleteSurveyPopupMessage" = "Tap to complete survey";
+
+"LIODismissalBarView.DismissalLabel" = "Hide Chat";
+
+"LIOEmailHistoryViewController.NavTitle" = "Email Conversation";
+"LIOEmailHistoryViewController.NavLeftButton" = "Close";
+"LIOEmailHistoryViewController.HeaderText" = "Need a copy of this chat? No problem!";
+"LIOEmailHistoryViewController.HeaderTextLong" = "Please provide your email address for a copy of this chat transcript.";
+"LIOEmailHistoryViewController.EmailHeader" = "Your Email Address:";
+"LIOEmailHistoryViewController.SubmitButton" = "Submit";
+"LIOEmailHistoryViewController.SuccessAlertTitle" = "Thank you!";
+"LIOEmailHistoryViewController.SuccessAlertBody" = "Your full chat transcript will be sent to your email address at the end of this conversation.";
+"LIOEmailHistoryViewController.SuccessAlertButton" = "Dismiss";
+"LIOEmailHistoryViewController.InvalidAlertTitle" = "Invalid Email";
+"LIOEmailHistoryViewController.InvalidAlertBody" = "Please enter a valid e-mail address";
+"LIOEmailHistoryViewController.InvalidAlertButton" = "Dismiss";
+
+"LIOInputBarView.SendButton" = "Send";
+"LIOInputBarView.Placeholder" = "Enter a message";
+"LIOInputBarView.TextFieldAccessibilityLabel" = "Chat Entry";
+
+"LIOInterstitialViewController.LoadingLabel" = "We're loading the chat.\nGive us just a few. :)";
+"LIOInterstitialViewController.DismissButton" = "Let's just hide this for now";
+"LIOInterstitialViewController.ErrorAlertTitle" = "Live Chat Error";
+"LIOInterstitialViewController.ErrorAlertBody" = "Sorry, but the live chat service is currently unavailable. Please try again later.";
+"LIOInterstitialViewController.ErrorAlertButton" = "Dismiss";
+
+"LIOLeaveMessageViewController.NavTitle" = "No Agents Available";
+"LIOLeaveMessageViewController.NavLeftButton" = "Close";
+"LIOLeaveMessageViewController.HeaderText" = "Please enter your email and a message for further help:";
+"LIOLeaveMessageViewController.SendButton" = "Send";
+"LIOLeaveMessageViewController.NoEmailAlertBody" = "Please enter an e-mail address.";
+"LIOLeaveMessageViewController.NoEmailAlertButton" = "Dismiss";
+"LIOLeaveMessageViewController.NoMessageAlertBody" = "Please enter a message.";
+"LIOLeaveMessageViewController.NoMessageAlertButton" = "Dismiss";
+"LIOLeaveMessageViewController.SuccessAlertTitle" = "Thank you!";
+"LIOLeaveMessageViewController.SuccessAlertBody" = "Your message has been sent.";
+"LIOLeaveMessageViewController.SuccessAlertButton" = "Dismiss";
+
+"LIOSurveyView.DefaultOfflineSurveyHeader" = "No agents are available - please enter your email and a message for further help.";
+"LIOSurveyView.DefaultOfflineSurveyLeaveEmailTitle" = "What is your e-mail address?";
+"LIOSurveyView.DefaultOfflineSurveyLeaveMessageTitle" = "Please enter a message:";
+
+"LIOSurveyView.SubmitOfflineSurveyAlertTitle" = "Thank you!";
+"LIOSurveyView.SubmitOfflineSurveyAlertBody" = "Your survey has been submitted.";
+"LIOSurveyView.SubmitOfflineSurveyAlertButton" = "Dismiss";
+
+"LIOSurveyView.LeaveSurveyAlertTitle" = "Leave Survey";
+"LIOSurveyView.LeaveSurveyAlertBody" = "Are you sure you want to exit without finishing this survey?";
+"LIOSurveyView.LeaveSurveyAlertYesButton" = "Yes";
+"LIOSurveyView.LeaveSurveyAlertNoButton" = "No";
+
+"LIONotificationArea.PoweredBy" = "Powered by";
+
+"LIOSurveyPickerView.DoneButton" = "Next";
+"LIOSurveyPickerView.HeaderText" = "Choose an option below:";
+
+"LIOSurveyView.NextButtonTitle" = "Next";
+"LIOSurveyView.DoneButtonTitle" = "Done";
+"LIOSurveyView.CancelButtonTitle" = "Cancel";
+
+"LIOSurveyView.DefaultPostSurveyTitle" = "Your support session has ended.";
+"LIOSurveyView.DefaultPostSurveyRateTitle" = "Please rate your satisfaction with company name overall:";
+"LIOSurveyView.DefaultPostSurveyCancelButton" = "No thanks";
+"LIOSurveyView.DefaultPostSurveySubmitButton" = "Submit";
+"LIOSurveyView.DefaultPostNeedHelpTitle" = "Still need help?";
+"LIOSurveyView.DefaultPostSurveyLiveChatButton" = "Live Chat";
+
+"LIOStarRatingView.ExcellentRatingTitle" = "Excellent";
+"LIOStarRatingView.GoodRatingTitle" = "Good";
+"LIOStarRatingView.OkRatingTitle" = "Ok";
+"LIOStarRatingView.NotGoodRatingTitle" = "Not Good";
+"LIOStarRatingView.BadRatingTitle" = "Poor";
+
+"LIOSurveyViewController.NavButtonLeft" = "Cancel";
+"LIOSurveyViewController.NavButtonLeftAlt" = "Back";
+"LIOSurveyViewController.NavButtonRight" = "Next";
+"LIOSurveyViewController.NavButtonRightAlt" = "Start Chat";
+"LIOSurveyViewController.QuestionHeader" = "Question %d of %d:";
+"LIOSurveyViewController.LastQuestionPickerViewDoneButton" = "Start Chat";
+"LIOSurveyViewController.ResponseAlertBody" = "Please enter a response for this question.";
+"LIOSurveyViewController.EmailValidationAlertBody" = "Please enter a valid e-mail address.";
+"LIOSurveyViewController.NumericValidationAlertBody" = "Please enter a valid number.";
+"LIOSurveyViewController.RegexpValidationAlertBody" = "Please check your response and try again.";
+"LIOSurveyViewController.MandatoryQuestionsTitle" = "Required items indicated with *";
+
+"LIOLookIOManager.ConnectionFailedAlertTitle" = "Chat Connection Failed";
+"LIOLookIOManager.ConnectionFailedAlertBody" = "Sorry, we can't connect with the live chat support right now. Please try again later.";
+"LIOLookIOManager.ConnectionFailedAlertButton" = "Dismiss";
+"LIOLookIOManager.LocalNotificationChatBody" = "The support agent has sent a chat message to you.";
+"LIOLookIOManager.LocalNotificationChatButton" = "Go!";
+"LIOLookIOManager.LocalNotificationReadyBody" = "The support agent is ready to chat with you!";
+"LIOLookIOManager.LocalNotificationReadyButton" = "Go!";
+"LIOLookIOManager.LocalNotificationScreenshareBody" = "The support agent wants to view your screen.";
+"LIOLookIOManager.LocalNotificationScreenshareButton" = "Go!";
+"LIOLookIOManager.ScreenshareAlertTitle" = "Screen Share Permission";
+"LIOLookIOManager.ScreenshareAlertBody" = "To better serve you, the support agent would like to view your screen. (Agent can only view this app, and only for this session.)";
+"LIOLookIOManager.ScreenshareAlertButtonAllow" = "Allow";
+"LIOLookIOManager.ScreenshareAlertButtonDisallow" = "Do Not Allow";
+"LIOLookIOManager.UnprovisionedAlertTitle" = "Live Chat Not Enabled";
+"LIOLookIOManager.UnprovisionedAlertBody" = "This app is not configured for live help. Please contact the app developer.";
+"LIOLookIOManager.UnprovisionedAlertButton" = "Dismiss";
+"LIOLookIOManager.ReconnectedAlertTitle" = "Chat Reconnected";
+"LIOLookIOManager.ReconnectedAlertBody" = "Your chat session has been reconnected.";
+"LIOLookIOManager.ReconnectedAlertButtonHide" = "Hide";
+"LIOLookIOManager.ReconnectedAlertButtonOpen" = "Open Chat";
+"LIOLookIOManager.ReconnectFailureAlertTitle" = "Chat Session Ended";
+"LIOLookIOManager.ReconnectFailureAlertBody" = "Your chat session could not be resumed. Please start a new session.";
+"LIOLookIOManager.ReconnectFailureAlertButton" = "Dismiss";
+"LIOLookIOManager.SessionEndedAlertTitle" = "Support Session Ended";
+"LIOLookIOManager.SessionEndedAlertBody" = "Your support session has ended. If you still need help, try connecting to a live chat agent again.";
+"LIOLookIOManager.SessionEndedAlertButton" = "Dismiss";
+"LIOLookIOManager.ReconnectQuestionAlertTitle" = "Chat Connection Lost";
+"LIOLookIOManager.ReconnectQuestionAlertBody" = "Your chat support session has lost its connection. If you would like to continue this session, we can try to reconnect you.";
+"LIOLookIOManager.ReconnectQuestionAlertButtonClose" = "Close";
+"LIOLookIOManager.ReconnectQuestionAlertButtonReconnect" = "Reconnect";
+"LIOLookIOManager.DefaultWelcomeMessage" = "Send a message to our live service reps for immediate help.";
+"LIOLookIOManager.StartFailureAlertTitle" = "Live Chat Error";
+"LIOLookIOManager.StartFailureAlertBody" = "Couldn't start live chat session. Please try again.";
+"LIOLookIOManager.StartFailureAlertButton" = "Dismiss";
+"LIOLookIOManager.EndSessionQuestionAlertTitle" = "End Support Session?";
+"LIOLookIOManager.EndSessionQuestionAlertBody" = "Would you like to end this customer support session?";
+"LIOLookIOManager.EndSessionQuestionAlertButtonYes" = "End";
+"LIOLookIOManager.EndSessionQuestionAlertButtonNo" = "Don't End";
+"LIOLookIOManager.ReconnectCancelAlertTitle" = "Chat Reconnecting";
+"LIOLookIOManager.ReconnectCancelAlertBody" = "We're trying to reconnect you with your chat support session. Continue reconnecting?";
+"LIOLookIOManager.ReconnectCancelAlertButtonStop" = "Stop";
+"LIOLookIOManager.ReconnectCancelAlertButtonContinue" = "Continue";
+"LIOLookIOManager.BadInitAlertTitle" = "Live Chat Disabled";
+"LIOLookIOManager.BadInitAlertBody" = "Live chat configuration error. UIWindow was not made key & visible before LPMobile library intitialization.";
+"LIOLookIOManager.BadInitButton" = "Close";
+"LIOLookIOManager.ResendMessageQuestionTitle" = "Your message could not be sent.";
+"LIOLookIOManager.ResendMessageQuestionSend" = "Try Again";
+"LIOLookIOManager.ResendMessageQuestionCancel" = "Not Now";
+"LIOLookIOManager.FailedMessageSendTitle" = "Live Chat Error";
+"LIOLookIOManager.FailedMessageSendBody" = "Your message could not be sent. Please try again.";
+"LIOLookIOManager.FailedMessageSendButton" = "Dismiss";
+"LIOLookIOManager.FailedAttachmentSendTitle" = "Live Chat Error";
+"LIOLookIOManager.FailedAttachmentSendBody" = "Your photo could not be sent. Please try again.";
+"LIOLookIOManager.FailedAttachmentSendButton" = "Dismiss";
+
+"LIOLookIOManager.KeyboardMenuPlusButton" = "Menu";
+"LIOLookIOManager.KeyboardMenuButtonTakePhoto" = "Take Photo";
+"LIOLookIOManager.KeyboardMenuButtonUploadPhoto" = "Upload Photo";
+"LIOLookIOManager.KeyboardMenuButtonFaqs" = "FAQs";
+"LIOLookIOManager.KeyboardMenuButtonEmailChat" = "Email Chat";
+"LIOLookIOManager.KeyboardMenuButtonHideChat" = "Hide Chat";
+"LIOLookIOManager.KeyboardMenuButtonEndSession" = "End Session";
+"LIOLookIOManager.KeyboardMenuButtonKeyboard" = "Keyboard";
+
+"LIOLookIOManager.WebViewLoadingTitle" = "Loading...";
+"LIOLookIOManager.WebViewCloseButton" = "Close";
+"LIOLookIOManager.WebViewOpenInBrowserButton" = "Open in Browser";
+
+"LIOLookIOManager.SessionEndedPostChatAlertTitle" = "Support Session Ended";
+"LIOLookIOManager.SessionEndedPostChatAlertBody" = "The agent has ended the chat. Provide feedback on your experience?";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonCancel" = "Cancel";
+"LIOLookIOManager.SessionEndedPostChatAlertButtonAccept" = "OK";
+
+"LIOLookIOManager.SecuredFormBubbleTitle" = "Secure form";
+"LIOLookIOManager.SecuredFormSenderNamePlaceholder" = "Tap to fill the form";
+
+"LIOLookIOManager.SecuredFormSubmittionFailed" = "Submission failed";
+"LIOLookIOManager.SecuredFormSuccessfullySubmitted" = "Successfully submitted";
+
+"LIOChatBubbleView.AlertCancelClose" = "Cancel";
+"LIOChatBubbleView.AlertClose" = "Close";
+"LIOChatBubbleView.DestructiveCloseMessage" = "If you close the form, you won’t be able to access it again. Are you sure you want to close it?";
+"LIOChatBubbleView.AlertCloseTitle" = "Close form";
+"LIOChatBubbleView.InvalidFormTitle" = "Invalid form";
+
+"LPBrandingBar.HideChatButton" = "Hide";
