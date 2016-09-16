@@ -1,0 +1,10 @@
+framework module LPMobileSDK {
+  umbrella header "LPMobileSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module LPMobileSDK.Swift {
+    header "LPMobileSDK-Swift.h"
+}
